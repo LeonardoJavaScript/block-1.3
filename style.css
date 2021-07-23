@@ -146,15 +146,15 @@ text, .menu__text__reputation{
 }
 
 @media (min-width:768px) {
-.header__box{
-    margin-left: 8px;
-    margin-top: 10px;
-    margin-right: 16px;
-}
-.menu__content{
-    flex-direction: row;
-    background: #F8F8F8;
-}
+    .header__box{
+        margin-left: 8px;
+        margin-top: 10px;
+        margin-right: 16px;
+    }
+    .menu__content{
+        flex-direction: row;
+        background: #F8F8F8;
+    }
     .button.button__phone, .button.button__message, .button.button__contact{
         display:inline-block;
     }
@@ -190,33 +190,33 @@ text, .menu__text__reputation{
         padding: 5px 5px 5px 5px;
     }
     .text__full{
-    margin-left: 10px;
+        margin-left: 10px;
     }
     .main__item:hover{
-    border: 2px solid #B8FFEC;
-    border-radius:6px ;
-    padding:8px 12px ;
-    background: #FFFFFF;
-    box-sizing: content-box;
-    margin-bottom: -4px;
+        border: 2px solid #B8FFEC;
+        border-radius:6px ;
+        padding:8px 12px ;
+        background: #FFFFFF;
+        box-sizing: content-box;
+        margin-bottom: -4px;
     }
     .text__full{
-    margin-left: 24px;
-    font-size: 14px;
+        margin-left: 24px;
+        font-size: 14px;
     }
     .main__text{
-    display:none;
+        display:none;
     }
     .main__text2{
-    display:inline;
-    margin:0 27px 15px 0;
-    font-size: 14px;
+        display:inline;
+        margin:0 27px 15px 0;
+        font-size: 14px;
     }
     .main__text3{
-    display: none;
+        display: none;
     }
     text, .menu__text__reputation{
-    display: none;
+        display: none;
     }
     .menu__text{
         font-family: "TT Lakes";
@@ -225,13 +225,13 @@ text, .menu__text__reputation{
         margin: 8px 48px 10px 0;
     }
     .main__nav{
-    margin:10px 27px 15px 2px ;
+        margin:10px 27px 15px 2px ;
     }
     .img__main{
-    width: 360px;
-    display: block;
-    border-radius: 5%;
-    margin: 0 25px 14px 48px;
+        width: 360px;
+        display: block;
+        border-radius: 5%;
+        margin: 0 25px 14px 48px;
     }
 }
 @media  (min-width:1120px){
