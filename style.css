@@ -180,6 +180,7 @@ text, .menu__text__reputation{
         list-style: none;
         overflow-x:scroll;
         margin-bottom: 19px;
+        padding: 5px 5px 5px 5px;
     }
     .text__full{
     margin-left: 10px;
