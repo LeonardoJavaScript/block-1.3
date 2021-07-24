@@ -106,7 +106,7 @@ a.link {
 .main__item:hover{
     border: 2px solid #B8FFEC;
     background: #FFFFFF;
-    box-sizing: content-box;
+    display: inline-block;
 }
 .main__text{
     font-family: "TT Lakes";
@@ -147,7 +147,6 @@ text, .menu__text__reputation{
 
 @media (min-width:768px) {
     .header__box{
-        margin-left: 8px;
         margin-top: 10px;
         margin-right: 16px;
     }
