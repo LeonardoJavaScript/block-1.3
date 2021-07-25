@@ -90,23 +90,24 @@ a.link {
     display: none ;
 }
 .main__list{
-    display :flex;
-    flex-direction: row;
+    overflow-x: scroll;
+    display: flex;
     list-style: none;
-    overflow-x:scroll;
+    white-space: nowrap;
+    margin-left: 16px;
+
 }
 .main__item {
-    padding:8px 7px 8px 16px;
-    margin-right: 12px;
-    white-space:nowrap;
-    margin-left: 12px;
     font-size: 16px;
+    padding:8px 25px;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    border: 2px solid #F8F8F8;
 }
-.main__item:hover:enabled{
-    border: 2px solid #B8FFEC ;
-    background: #FFFFFF;
-    cursor: pointer;
-    margin-top: -4px;
+.main__item:hover{
+    border: 2px #b8ffec solid;
+    border-radius: 6px;
 }
 .description__text-320{
     font-family: "TT Lakes";
@@ -201,12 +202,8 @@ text, .description__text-1120{
         font-family: "TT Lakes";
     }
     .main__item:hover{
-        border: 2px solid #B8FFEC;
-        border-radius:6px ;
-        padding:8px 12px ;
-        background: #FFFFFF;
-        box-sizing: content-box;
-        margin-bottom: -4px;
+        border: 2px #b8ffec solid;
+        border-radius: 6px;
     }
     .description__full{
         margin-left: 24px;
