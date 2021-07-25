@@ -22,14 +22,12 @@ a.link {
     color: #666;
 }
 .header__box{
-    font-family:TT Lakes serif;
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid #D9FFF5;
     background: #FFFFFF;
 }
 .main__container{
-    font-family:TT Lakes serif;
     display: flex;
     flex-direction: column ;
     background: #F8F8F8;
@@ -76,11 +74,10 @@ a.link {
 .main__title {
     padding: .6em 0;
     font-size: 28px;
-    font-family: B Lakes serif;
     display: flex;
 }
 .main__title:before{
-    font-family: B Lakes serif;
+    font-family: "B Lakes";
     content:"|";
     color: #41F6D7;
     background-color: #41F6D7;
@@ -98,7 +95,7 @@ a.link {
     list-style: none;
     overflow-x:scroll;
 }
-.main__item{
+.main__item {
     padding:8px 7px 8px 16px;
     margin-right: 12px;
     white-space:nowrap;
@@ -106,35 +103,33 @@ a.link {
     font-size: 16px;
 }
 .main__item:hover:enabled{
-    border: 2px solid #B8FFEC;
+    border: 2px solid #B8FFEC ;
     background: #FFFFFF;
-    display: inline-block;
     cursor: pointer;
-    margin-top: -2px;
-
+    margin-top: -4px;
 }
 .description__text-320{
-    font-family: TT Lakes serif;
+    font-family: "TT Lakes";
     margin: 24px 16px 16px 16px;
     font-size: 14px;
 }
 .description__text-768{
-    font-family: TT Lakes serif;
+    font-family: "TT Lakes";
     display: none;
 }
 text, .description__text-1120{
-    font-family: TT Lakes serif;
+    font-family: "TT Lakes";
     display: none;
 }
 .description__text{
-    font-family: TT Lakes serif;
+    font-family: "TT Lakes";
     display: none;
 }
 .description__text-one {
     display: none;
 }
 .main__nav{
-    font-family:Bl Lakes serif;
+    font-family:"Bl Lakes";
     padding: .6em 0;
     margin:16px 6px 0 24px;
     font-size: 16px;
@@ -203,6 +198,7 @@ text, .description__text-1120{
     }
     .description__full{
         margin-left: 10px;
+        font-family: "TT Lakes";
     }
     .main__item:hover{
         border: 2px solid #B8FFEC;
@@ -231,7 +227,7 @@ text, .description__text-1120{
         display: none;
     }
     .description__text-one{
-        font-family: TT Lakes serif;
+        font-family: "TT Lakes";
         padding: .6em 0;
         display: inline;
         margin: 8px 48px 10px 0;
@@ -288,7 +284,7 @@ text, .description__text-1120{
     .main__title1{
         display: inline ;
         margin-top: 16px;
-        font-family: B Lakes serif;
+        font-family: "B Lakes";
     }
     .main__title1:before{
         content:"|";
@@ -319,6 +315,7 @@ text, .description__text-1120{
         height: 24px;
         left: 632px;
         cursor: pointer;
+        font-family: "Bl Lakes";
     }
     .button.header__button-search1120::before{
         position: absolute;
@@ -327,6 +324,7 @@ text, .description__text-1120{
         height: 24px;
         left: 910px;
         cursor: pointer;
+        font-family: "Bl Lakes";
     }
     .main__list{
         flex-direction: row ;
