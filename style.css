@@ -22,33 +22,33 @@ a.link {
     color: #666;
 }
 .header__box{
-    font-family:"TT Lakes";
+    font-family:TT Lakes serif;
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid #D9FFF5;
     background: #FFFFFF;
 }
-.main__content{
-    font-family:"TT Lakes";
+.main__container{
+    font-family:TT Lakes serif;
     display: flex;
     flex-direction: column ;
     background: #F8F8F8;
 }
-.menu__content{
+.main__description{
     display: flex;
     flex-direction: column ;
     background: #F8F8F8;
 }
-.button.button__service2, .button.button__search2{
+.button.header__button-service1120, .button.header__button-search1120{
     display: none;
 }
-.img, .img__divide{
+.img, .header__divide{
     display: none;
 }
-.img__group{
+.header__logo{
     margin:6px 12px 14px 0;
 }
-.img__divider{
+.header__divider{
     margin-top: 16px;
     width: 2px;
     height: 32px;
@@ -56,7 +56,7 @@ a.link {
     border-radius: 1px;
     margin-right: 1em;
 }
-.button.button__phone, .button.button__message, .button.button__contact{
+.button.header__button-phone, .button.header__button-message, .button.header__button-contact{
     display: none;
 }
 .button{
@@ -67,18 +67,20 @@ a.link {
     height: 40px;
     border-radius: 50%;
     border: none;
+    cursor: pointer;
 }
-.button.button__main{
+.button.header__button-main{
     margin-left: 16px;
+    cursor: pointer;
 }
 .main__title {
     padding: .6em 0;
     font-size: 28px;
-    font-family: "B Lakes";
+    font-family: B Lakes serif;
     display: flex;
 }
 .main__title:before{
-    font-family: "B Lakes";
+    font-family: B Lakes serif;
     content:"|";
     color: #41F6D7;
     background-color: #41F6D7;
@@ -97,39 +99,42 @@ a.link {
     overflow-x:scroll;
 }
 .main__item{
-    padding:8px 9px 8px 16px;
+    padding:8px 7px 8px 16px;
     margin-right: 12px;
     white-space:nowrap;
     margin-left: 12px;
     font-size: 16px;
 }
-.main__item:hover{
+.main__item:hover:enabled{
     border: 2px solid #B8FFEC;
     background: #FFFFFF;
     display: inline-block;
+    cursor: pointer;
+    margin-top: -2px;
+
 }
-.main__text{
-    font-family: "TT Lakes";
+.description__text-320{
+    font-family: TT Lakes serif;
     margin: 24px 16px 16px 16px;
     font-size: 14px;
 }
-.main__text2{
-    font-family: "TT Lakes";
+.description__text-768{
+    font-family: TT Lakes serif;
     display: none;
 }
-text, .menu__text__reputation{
-    font-family: "TT Lakes";
+text, .description__text-1120{
+    font-family: TT Lakes serif;
     display: none;
 }
-.menu__text3{
-    font-family: "TT Lakes";
+.description__text{
+    font-family: TT Lakes serif;
     display: none;
 }
-.menu__text {
+.description__text-one {
     display: none;
 }
 .main__nav{
-    font-family:"Bl Lakes";
+    font-family:Bl Lakes serif;
     padding: .6em 0;
     margin:16px 6px 0 24px;
     font-size: 16px;
@@ -139,25 +144,28 @@ text, .menu__text__reputation{
     width: 8px;
     height: 5px;
     margin-right:16px ;
+    cursor: pointer;
 }
-.img__main{
+.main__image{
     Width :320px;
     margin-bottom: 25px;
+}
+.element::-webkit-scrollbar {
+    width: 0;
 }
 
 @media (min-width:768px) {
     .header__box{
-        margin-top: 10px;
         margin-right: 16px;
     }
-    .menu__content{
+    .main__description{
         flex-direction: row;
         background: #F8F8F8;
     }
-    .button.button__phone, .button.button__message, .button.button__contact{
+    .button.header__button-phone, .button.header__button-message, .button.header__button-contact{
         display:inline-block;
     }
-    .img, .img__divide{
+    .img, .header__divide{
         display: block;
         margin-top: 0.8em;
         width: 2px;
@@ -166,16 +174,18 @@ text, .menu__text__reputation{
         border-radius: 1px;
         margin-right: 1em;
     }
-    .img__group{
+    .header__logo{
         margin-right:250px;
         margin-left: 20px;
+        cursor: pointer;
     }
-    .img, .img__divide{
+    .img, .header__divide{
         margin-top: 16px;
         margin-right: 12px;
         margin-left: 12px;
+        cursor: pointer;
     }
-    .img__divider{
+    .header__divider{
         margin:16px 5px 0 5px  ;
         background: #EAEAEA;
         border-radius: 1px;
@@ -188,7 +198,10 @@ text, .menu__text__reputation{
         margin-bottom: 19px;
         padding: 5px 5px 5px 5px;
     }
-    .text__full{
+    .element::-webkit-scrollbar {
+        width: 0;
+    }
+    .description__full{
         margin-left: 10px;
     }
     .main__item:hover{
@@ -199,14 +212,14 @@ text, .menu__text__reputation{
         box-sizing: content-box;
         margin-bottom: -4px;
     }
-    .text__full{
+    .description__full{
         margin-left: 24px;
         font-size: 14px;
     }
-    .main__text{
+    .description__text-320{
         display:none;
     }
-    .main__text2{
+    .description__text-768{
         display:inline;
         margin:0 27px 15px 0;
         font-size: 14px;
@@ -214,11 +227,11 @@ text, .menu__text__reputation{
     .main__text3{
         display: none;
     }
-    text, .menu__text__reputation{
+    text, .description__text-1120{
         display: none;
     }
-    .menu__text{
-        font-family: "TT Lakes";
+    .description__text-one{
+        font-family: TT Lakes serif;
         padding: .6em 0;
         display: inline;
         margin: 8px 48px 10px 0;
@@ -226,7 +239,7 @@ text, .menu__text__reputation{
     .main__nav{
         margin:10px 27px 15px 2px ;
     }
-    .img__main{
+    .main__image{
         width: 360px;
         display: block;
         border-radius: 5%;
@@ -245,15 +258,15 @@ text, .menu__text__reputation{
         background: #F8F8F8;
         padding-top: 25px;
     }
-    .main__content{
+    .main__container{
         width: 1120px;
     }
-    .menu__content{
+    .main__description{
         background: #F8F8F8;
         width: 1120px;
     }
-    .button.button__main,.button.button__phone, .button.button__message, .button.button__contact,
-    .button.button__search, .button.button__service{
+    .button.header__button-main,.button.header__button-phone, .button.header__button-message, .button.header__button-contact,
+    .button.header__button-search, .button.header__button-service{
         display: none;
     }
     .main__button{
@@ -263,19 +276,19 @@ text, .menu__text__reputation{
     .main__title{
         display: none;
     }
-    .img__divider{
+    .header__divider{
         display: none;
     }
-    .img, .img__divide{
+    .img, .header__divide{
         display: none;
     }
-    .img__group{
+    .header__logo{
         display: none;
     }
     .main__title1{
         display: inline ;
         margin-top: 16px;
-        font-family: "B Lakes";
+        font-family: B Lakes serif;
     }
     .main__title1:before{
         content:"|";
@@ -286,32 +299,34 @@ text, .menu__text__reputation{
         margin-left: -3px;
         display: inline-block;
     }
-    .button.button__service2, .button.button__search2{
+    .button.header__button-service1120, .button.header__button-search1120{
         display:inline-block;
         justify-content: space-between;
     }
-    .button.button__service2{
+    .button.header__button-service1120{
         margin-left: 280px;
         margin-top: 16px;
     }
-    .button.button__search2{
+    .button.header__button-search1120{
         margin-left:15px;
         margin-right:32px;
         margin-top: 16px;
     }
-    .button.button__service2::before{
+    .button.header__button-service1120::before{
         position: absolute;
         content:"Оставить заявку";
         Width:125px;
         height: 24px;
-        left: 645px;
+        left: 632px;
+        cursor: pointer;
     }
-    .button.button__search2::before{
+    .button.header__button-search1120::before{
         position: absolute;
         content:"Статус ремонта";
         Width:125px;
         height: 24px;
         left: 910px;
+        cursor: pointer;
     }
     .main__list{
         flex-direction: row ;
@@ -322,13 +337,13 @@ text, .menu__text__reputation{
     .main__item__brand{
         display: inline;}
 
-    .menu__text{
+    .description__text-one{
         display: none;
     }
-    p, .main__text2{
+    p, .description__text-768{
         display: none;
     }
-    .menu__text3{
+    .description__text{
         display: inline;
         font-size: 14px;
     }
@@ -337,13 +352,13 @@ text, .menu__text__reputation{
         margin-right: 32px;
         font-size: 14px;
     }
-    text, .menu__text__reputation{
+    text, .description__text-1120{
         display: inline;
     }
-    .text__full{
+    .description__full{
         margin-left: 32px;
     }
-    .img__main{
+    .main__image{
         width: 530px;
         border-radius: 5%;
         margin:0 28px 30px 36px;
