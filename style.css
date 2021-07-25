@@ -311,11 +311,12 @@ text, .description__text-1120{
     .button.header__button-service1120::before{
         position: absolute;
         content:"Оставить заявку";
-        Width:125px;
+        Width:130px;
         height: 24px;
-        left: 632px;
+        left: 635px;
         cursor: pointer;
         font-family: "Bl Lakes";
+        font-size: 16px;
     }
     .button.header__button-search1120::before{
         position: absolute;
@@ -325,6 +326,7 @@ text, .description__text-1120{
         left: 910px;
         cursor: pointer;
         font-family: "Bl Lakes";
+        font-size: 16px;
     }
     .main__list{
         flex-direction: row ;
